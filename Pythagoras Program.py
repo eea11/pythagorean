@@ -1,6 +1,7 @@
-def beginning () :
 # This is my introductory sentence.
-    print "Hello! Welcome to my program which can be used to solve for either side A,B, or C. "
+print "Hello! Welcome to my program which can be used to solve for either side A,B, or C. "
+def beginning() :
+    ""
     sides  = int(raw_input("Choose which equation to enter. Choose out of AB=C(1) AC=B(2)  or BC=A(3) or (4) to end the program."))
     # I have the user to choose which two sides to enter because the equation to solve for different sides is different depending on which to side you want to find out.
     if sides == 1:
@@ -55,6 +56,8 @@ def beginning () :
         # This ends the program.
     else:
         print "That is not one of the specified numbers or symbols please choose either 1, 2, 3, or 4."
-        print "Please rerun the program."
-        # The user has to restart the program with the correct characters.
+        # The user has to choose their numbers again with the correct characters.
+        beginning()
+
+
 beginning()

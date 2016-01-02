@@ -1,8 +1,7 @@
 # This is my introductory sentence.
-print "Hello! Welcome to my program which can be used to solve for either side A,B, or C. "
+print "Hello! This program allows you to calculate one side of a right triangle using the Pythagorean Theorem.\n"
 def beginning() :
-    ""
-    sides  = int(raw_input("Choose which equation to enter. Choose out of AB=C(1) AC=B(2)  or BC=A(3) or (4) to end the program."))
+    sides  = int(raw_input("""1. Choose 1 to calculate the length of side C using sides A and B.\n2. Choose 2 to calculate the length of side B using sides A and C.\n3. Choose 3 to calculate the length of side A using sides B and C.\n4. Choose 4 to exit the program and return to the terminal.\n\nWhat would you like to do? """))
     # I have the user to choose which two sides to enter because the equation to solve for different sides is different depending on which to side you want to find out.
     if sides == 1:
         print "OK"
@@ -55,7 +54,7 @@ def beginning() :
         loop = 0
         # This ends the program.
     else:
-        print "That is not one of the specified numbers or symbols please choose either 1, 2, 3, or 4."
+        print "That's not a valid option. Please choose 1, 2, 3, or 4."
         # The user has to choose their numbers again with the correct characters.
         beginning()
 
